@@ -7,7 +7,7 @@
 
 /* コンテナ */
 .container{
-    max-width: 50rem;
+    max-width: 40rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -29,24 +29,35 @@
 }
 
 /* 入力&表示部分 */
-.textbox{
-    width: 80%;
-    height: 3rem;
+#textbox{
+    width: 100%;
+    height: 5rem;
     text-align: right;
+    vertical-align: bottom;
     box-sizing: border-box;
     padding-right: 1rem;
+    padding-bottom: 1rem;
     margin-bottom: 1.5rem;
 }
 
 /* ボタン部分 */
-.btn-group{
-    width: 80%;
+table{
+    width: 100%;
 }
-.row{
-    width: 30rem;
-    margin: 0 auto;
+
+tr{
+    width: 100%;
 }
-.btn-group input{
-    width: 5rem;
-    height: 3rem;
+td{
+    width: 25%;
+    height: 4rem;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+button{
+    width: 100%;
+    height: 100%;
+    font-size: 1.25rem;
+    color: #333333;
 }
