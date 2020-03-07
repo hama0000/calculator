@@ -7,7 +7,7 @@
 
 /* コンテナ */
 .container{
-    max-width: 40rem;
+    width: 320px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,8 @@
 /* 入力&表示部分 */
 #textbox{
     width: 100%;
-    height: 5rem;
+    height: 6rem;
+    font-size: 1.5rem;
     text-align: right;
     vertical-align: bottom;
     box-sizing: border-box;
@@ -40,7 +41,7 @@
     margin-bottom: 1.5rem;
 }
 
-/* ボタン部分 */
+/* レイアウト */
 table{
     width: 100%;
 }
@@ -55,6 +56,7 @@ td{
     box-sizing: border-box;
 }
 
+/* ボタン部分 */
 button{
     width: 100%;
     height: 100%;
