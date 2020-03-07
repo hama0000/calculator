@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* コンテナ */
+.container{
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+/* コンテンツ */
+.contents{
+    width: 100%;
+}
+
+/* ボタン部分 */
+.btn-group{
+    width: 50rem;
+}
