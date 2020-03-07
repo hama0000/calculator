@@ -4,9 +4,18 @@ $(function () {
     var $result = '';
 
     $('button').on('click', function () {
-        $val += $(this).text();
-        $('#textbox').text($val);
-        console.log($val);
+
+        var $textbox = $('#textbox');
+
+
+        if ($(this).text() != 'AC') {
+            $val += $(this).text();
+            $textbox.text($val);
+            console.log($val);
+        } else {
+            $val = '';
+            $textbox.text('0');
+        }
     });
 
 
