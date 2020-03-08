@@ -66,4 +66,5 @@ button{
     height: 100%;
     font-size: 1.25rem;
     color: #333333;
+    border-radius: 0;
 }
