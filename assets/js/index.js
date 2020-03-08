@@ -1,29 +1,28 @@
 $(function () {
 
-    var $val = '';
-    var $result = '';
-
     $('button').on('click', function () {
 
         var $textbox = $('#textbox');
+        var $pushed = $(this).text();
 
+        if ($pushed == '=') {
+            // イコールが押されたときの処理
+            $textbox.text(eval($textbox.text()));
 
-        if ($(this).text() != 'AC') {
-            $val += $(this).text();
-            $textbox.text($val);
-            console.log($val);
-        } else {
-            $val = '';
+        } else if ($pushed == 'AC') {
+            // ACが押されたときの処理
             $textbox.text('0');
+
+        } else {
+            // その他のボタンが押されたときの処理
+            if ($textbox.text() == '0') {
+                $textbox.text($pushed);
+
+            } else {
+                $textbox.text($textbox.text() + $pushed);
+            }
+
         }
-    });
-
-
-    /*
-    $('.iqual').on('click', function () {
 
     });
-    */
-
-
 });
