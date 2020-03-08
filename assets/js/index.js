@@ -11,7 +11,9 @@ $(function () {
 
         if ($pushedText == '=') {
             // イコールが押されたときの処理
-            $textbox.text(eval($textbox.text()));
+            if ($distinction == 0) {
+                $textbox.text(eval($textbox.text()));
+            } // 直前に演算子が押されていたときの処理はなし
 
         } else if ($pushedText == 'AC') {
             // ACが押されたときの処理
@@ -32,10 +34,8 @@ $(function () {
                         $distinction = 1;
                         console.log("演算子が押されました");
 
-                    } else {
-                        // 直前に演算子が押されていたときの処理
-                        return;
-                    }
+                    } // 直前に演算子が押されていたときの処理はなし
+
 
                 } else {
                     // 演算子以外が押されたとき
