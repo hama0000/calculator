@@ -2,6 +2,7 @@ $(function () {
 
     const $button = $('button');
     var $distinction = 0;
+    var hsize;
 
 
     $button.on('click', function () {
@@ -56,4 +57,15 @@ $(function () {
         }
 
     });
+
+    $(document).ready(function () {
+        hsize = $(window).height();
+        $('.contents').css('height', hsize + 'px');
+    });
+
+    $(window).resize(function () {
+        hsize = $(window).height();
+        $('.contents').css('height', hsize + 'px');
+    });
+
 });
