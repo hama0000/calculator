@@ -69,4 +69,6 @@ button{
     color: #333333;
     border-radius: 0;
     border-style: none;
+    background-color: #c9ced1;
+    opacity: 0.8;
 }
